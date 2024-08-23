@@ -54,7 +54,6 @@ data_directory <- stringi::stri_join(parent_dir, "usable_participant_data", "", 
 ################################################################################
 
 
-code_script_function <- stringi::stri_join(here::here(), "Code_scripts", "", sep = "/")
 
 source(paste0(here_dir,"/", "final_processing_itaco.R"))
 
@@ -65,11 +64,9 @@ source(paste0(here_dir,"/", "final_processing_itaco.R"))
 ################################################################################
 
 
-#Set working directory for the screener survey data 
+#Set to parent directory where the data is 
 
-
-project_directory <- here()
-setwd(project_directory)
+setwd(parent_dir)
 
 
 # Read in the file with the mental health data
@@ -77,9 +74,9 @@ setwd(project_directory)
 
 mh_data_raw <- read.csv("CICESE- Main - Georgia owned_August 14, 2024_02.57.csv")
 
-source("/Users/zeldabrufal/iTACO/Code_scripts/mental_health_code.R")
 
-source(paste0(code_script_function, "Mental health code.R"))
+
+source(paste0(here_dir,"/", "final_mental_health_code.R"))
 
 ################################################################################
 ##################  CREATING THE DIFFERENT LEVEL DATA FRAMES        ############
@@ -87,7 +84,7 @@ source(paste0(code_script_function, "Mental health code.R"))
 
 
 
-source(paste0(code_script_function, "iTACO_summary_data_frames_code.R"))
+source(paste0(here_dir,"/", "iTACO_summary_data_frames_code.R"))
 
 
 
