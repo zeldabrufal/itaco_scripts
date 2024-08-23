@@ -1,0 +1,39 @@
+---
+title: "Summer Internship 2024"
+
+output:
+  ioslides_presentation:
+    incremental: true
+    
+  
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## The project {.build}
+
+> - The iTACO project involves passively collecting smartphone data from adolescents using a custom made app, and then seeing how this data relates to mental health. Being able to establish what these relationships are (if there are any at all) is probably an essential first step before trying to understand causal links (which is what policy makers and our current society is obsessed with)
+
+
+## My responsibilities {.build}
+
+
+My responsibilities fell into three main categories:
+
+* Data collection
+    + Participant recruitment
+    + Participant meetings 
+    + Checking everything was working
+
+* Data cleaning and processing
+    + 
+
+## D
+
+
+
+
+
+
