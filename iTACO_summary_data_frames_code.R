@@ -83,7 +83,8 @@ participant_level_data_frame <- merge(participant_level_data_frame, processed_mh
 
 if (nrow(participant_level_data_frame) != n_distinct(participant_folders)){
   stop("STOP: The number of partiicpants put in the participant level data frame does not match the number different
-       participant folders / no. participant mh surverys. Something has gone wrong.")}
+       participant folders / no. participant mh surverys. This is normally because someone forogt to 
+       enter their id in the questionnaire. ")}
 
 
 

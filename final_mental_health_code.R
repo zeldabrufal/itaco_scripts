@@ -4,14 +4,6 @@
 ##################################################################################
 ##################################################################################
 
-############## LOADING IN THE DATA. ###############################################
-
-
-setwd("/Users/zeldabrufal/iTACO")
-mh_data_raw <- read.csv("CICESE- Main - Georgia owned_August 14, 2024_02.57.csv")
-list.files()
-
-
 ##################################################################################
 ############        Renaming columns                        ######################
 ##################################################################################
@@ -384,6 +376,12 @@ mh_data2$ppid[mh_data2$RecordedDate == '2024-07-26 08:13:36'] <- 'z83'
 processed_mh_data <- mh_data2 %>%
   dplyr::filter(str_to_lower(ppid) %in% str_to_lower(ppids_for_participant_level_data_frame))
 
+ppids_for_participant_level_data_frame <- tolower(ppids_for_participant_level_data_frame)
+mh_data2$ppid <- tolower(mh_data2$ppid)
+
+
+processed_mh_data <- mh_data2 %>%
+  dplyr::filter(str_to_lower(ppid) %in% str_to_lower(ppids_for_participant_level_data_frame))
 
 
 ################################################################################

@@ -97,15 +97,13 @@ for (folder in participant_folders) {
 
 #############################################################################
 
-#######
 
 
-embedded_null_lines <- grepl("nul", combined_data_frame, fixed = TRUE)
 
 
 
 failed_time_parsing_rows <- combined_data_frame  %>%
-  filter(is.na(date_and_time))
+  filter(is.na(date_and_time)) 
 
 
 
