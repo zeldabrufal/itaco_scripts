@@ -4,7 +4,7 @@ To make these scripts work, your directory needs to be set up as follows:
 
 ```{r}
 PARENT_FOLDER
-├── CICESE- Main - Georgia owned_August 28, 2024_03.55.csv. # most up to date version of post data collection survey
+├── CICESE- Main - "".csv. # put the most up to date version of post data collection survey
 ├── itaco_scripts 
       ├── README.md
       ├── final_main_itaco.R
