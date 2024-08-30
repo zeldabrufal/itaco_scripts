@@ -101,14 +101,12 @@ for (folder in participant_folders) {
 
 
 
-
-failed_time_parsing_rows <- combined_data_frame  %>%
-  filter(is.na(date_and_time)) 
-
-
-
 combined_data_frame <- combined_data_frame %>%
   filter(!is.na(date_and_time))
+
+
+
+print("finished loading files, now moving on to processing (can take a while)")
 
 ################################################################################
 ###### Arranging by date and time and then only keeping 7 full days of data ####
@@ -143,15 +141,6 @@ ppids_with_real_life_days_missing<- processed_data_7_days %>%
   ungroup() %>%
   select(ppid) %>%
   distinct()
-
-
-
-
-################################################################################
-###### FINDING PARTICIPANTS W ##################
-################################################################################
-
-
 
 
 

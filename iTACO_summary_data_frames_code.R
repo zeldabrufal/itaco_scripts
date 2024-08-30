@@ -12,7 +12,7 @@
 ############ Creating the app-session level data frame     #####################
 ################################################################################
 
-
+print("creating app-session level data frame")
 
 app_session_df <- processed_data_7_days %>%
   dplyr::filter(!is.na(app_session_id)) %>%
@@ -33,7 +33,7 @@ app_session_df <- processed_data_7_days %>%
 ############ Creating session level data frame     #############################
 ################################################################################
 
-
+print("creating session level data frame")
 
 session_df <- processed_data_7_days %>%
   dplyr::group_by(session_id) %>%
@@ -54,6 +54,9 @@ session_df <- processed_data_7_days %>%
 ################################################################################
 ############ Creating participant level data frame     #########################
 ################################################################################
+
+
+print("creating participant level data frame")
 
 # getting new list of participant ids
 
