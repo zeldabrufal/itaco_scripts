@@ -45,3 +45,9 @@ This script loads in the post data questionnaire data. It then:
 ## iTACO_summary_data_frames_code.R
 
 This script creates three additional data frames that reflect the different levels you might wish to look at the data at. More information about each of these data frames can be found in the data dictionary
+
+## Colour scheme suggestion for data visualisations?
+
+I really like this colour combination :
+
+"darkorchid3" + "chocolate1", with "blanchedalmond" for uncertainty/ background colour
