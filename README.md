@@ -22,7 +22,7 @@ This script calls the other scripts. If you run it it should load in and process
 
 ## final_processing_itaco.R
 
-This script first loops through every participant folder in the usable_participant_data folder, and loads in every txt.file. It then gets rid of non user initiated events and processes all the rows into columns, and loads this processed data into the data frame called "combined_data_frame". This data frame is the most unprocessed version of the data (i.e., only contains the raw variables from the txt files: PPID, event, node info, app, date and time)
+This script first loops through every participant folder in the usable_participant_data folder, and loads in every txt.file. It then gets rid of non user initiated events and processes all the rows into columns, and loads this processed data into the data frame called "**combined_data_frame**". This data frame is the most unprocessed version of the data (i.e., only contains the raw variables from the txt files: PPID, event, node info, app, date and time)
 
 It then creates a more processed data frame of all the participant data, called **processed_data_7_days**. Details about this can be found in the data dictionary, but broadly: - It only contains 7 days of data for each participant - Contains all the created variables on the lowest level (i.e., sessions, app-sessions, rank order)
 
