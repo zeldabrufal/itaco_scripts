@@ -9,9 +9,17 @@
 ##################################################################################
 
 
+
 mh_data <- mh_data_raw %>%
   dplyr::rename('ppid' = 'Q24')%>% # naming the ppid column
   dplyr::rename('gender' = 'Q25.1')%>% # naming gender column 
+  dplyr::rename('This week, did you use any social media sites on an Internet browser?' = 'Q25')%>%
+  dplyr::rename('If so, which sites did you use?' = 'Q27')%>%
+  dplyr::rename('On average, how many hours did you spend on each of these sites via the browser last week?' = 'Q29')%>%
+  dplyr::rename('Without looking at the screen time on your phone, what would you estimate is the average amount of hours you spent on your phone this week?' = 'Q31.1')%>%
+  dplyr::rename('On average, I receive notifications on my phone screen:' = 'Q22')%>%
+  dplyr::rename('Do you have any other comments about your phone use?' = 'Q32.1')%>%
+  dplyr::rename('Do you have any other comments about this study in general?' = 'Q33')%>%
   dplyr::rename('most_automatic_app_self_reported' = 'Q23')%>% # naming most automatic app (self report) column
   dplyr::rename('least_automatic_app_self_reported' = 'Q24.1')%>% # naming least automatic app (self report) column
   dplyr::rename_with(~ gsub("Q8_", "PHQ8_", .))%>% # renaming PHQ-8 
